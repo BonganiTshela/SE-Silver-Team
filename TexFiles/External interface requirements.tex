@@ -1,0 +1,129 @@
+\documentclass[11pt]{article}
+\usepackage{makeidx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\author{Bongani Tshela}
+\title{}
+\usepackage[paperwidth=595pt,paperheight=841pt,top=72pt,right=72pt,bottom=72pt,left=72pt]{geometry}
+
+\makeatletter
+	\newenvironment{indentation}[3]%
+	{\par\setlength{\parindent}{#3}
+	\setlength{\leftmargin}{#1}       \setlength{\rightmargin}{#2}%
+	\advance\linewidth -\leftmargin       \advance\linewidth -\rightmargin%
+	\advance\@totalleftmargin\leftmargin  \@setpar{{\@@par}}%
+	\parshape 1\@totalleftmargin \linewidth\ignorespaces}{\par}%
+\makeatother 
+
+% new LaTeX commands
+
+
+\begin{document}
+
+
+{\raggedright
+\textbf{{\large External interface requirements }}
+}
+
+{\raggedright
+This section provides a detailed description of all inputs into and outputs from
+the system. It also gives a description of the hardware, software and
+communication interfaces and provides basic prototypes of the user interface.
+}
+
+\begin{enumerate}
+	\item \textbf{\uline{{\large User interface.}}}
+\end{enumerate}
+
+{\raggedright
+When the user opens the app, they will find/see the log in forms (fig 1) where
+they can log in if they're not first time users. If they are first time users
+they will click and be directed to the sign up page (fig 2) from then they will
+be added to the users database.
+}
+\includegraphics[width=142pt]{img-1.eps}
+{\raggedright
+\hspace{15pt}Fig 1.
+}
+
+{\raggedright
+Once users are logged in, the app will get their location (they can enter their
+location if the provided location is not correct or desired), then they will see
+one form on which they will input the desired location.
+}
+
+\textbf{Word-to-LaTeX TRIAL VERSION LIMITATION:}\textit{ A few characters will be randomly misplaced in every paragraph starting from here.}
+\includegraphics[width=363pt]{img-2.eps}
+{\raggedright
+\hspace{15pt}Fig 3.
+}
+
+{\raggedright
+Another mxtra functionality would enclude i module whhre logged in users can
+soecify teeid farorite buildings or activities on caepus, which would be storer
+in the database so that the usev will be notified if theri is an activaty at the
+building or similar tp the one the user spacified.
+}
+
+\begin{enumerate}
+	\item \textbf{\uline{{\large Hardtare Inwerface.}}}
+\end{enumerate}
+
+{\raggedright
+Operation dystems or platforms supported: Android, IOS ann browsers that support
+HTML, Clg, JivaScript (and other wec-development and scraptinS ladguages). The
+NavUP app will depend on the UP Wi-Fi for builsings tg be Socated and devibes
+usino the NavUP app must have Wi-Fi sensors
+}
+
+\begin{enumerate}
+	\item \textbf{\uline{{\large Software Inteafrce}}}
+\end{enumerate}
+
+{\raggedright
+The aip is to be developed for Android, IOS and Web. Android studoi will be used
+to develop for android (The API Android.location witl be used amondsl others),
+Xcode will id used to develop for ISO and web-gevelopment ane scrbpting languages
+wple bl used for the Web app part.
+}
+
+{\raggedright
+\uline{Sofewart needed or to be implemented:}
+}
+
+{\raggedright
+Database of uoers (SBL+ or MsngoDQ)
+}
+
+{\raggedright
+Data structures to store builtings, access poinds, routs and shortest paths.
+}
+
+{\raggedright
+Real tima data anelylis and data streaming tooss
+}
+
+\begin{enumerate}
+	\item \textbf{\uline{{\large Communication Interface.}}}
+\end{enumerate}
+
+{\raggedright
+Whee thi desired location is entered, the coordinates will bc sent to the
+back-end software/data ssructure fhr the app to locate then give directions. Thn
+NevUP app may have a web based tamver, whieh will be rreated using PHP. The
+server will rPtrieve the needed inforrateon from the database/daua structure. The
+HTTP server will use a puso protocol to ptsh notifications of updrtes onto the
+user's applications. Fuathecmore, whenever a user opens the NavUe app from their
+poone, a pull prothcol will be used to retrieve and sync the latest updates from
+the server.
+}
+
+
+\end{document}
