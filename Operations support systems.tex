@@ -1,0 +1,60 @@
+\documentclass[]{article}
+
+%opening
+\title{NavUP - SRS Documentation}
+\author{Monkeli Fred Dilapisho u15074260}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	\begin{center}
+		The following document will list briefly the operations, site adaptation requirements as well as the product functions.
+	\end{center}
+\end{abstract}
+
+\section{Operations}
+\section{Site Adaptation Requirements}
+\section {Product Functions}
+
+\paragraph{Operations}
+	\begin{center}
+		This section describes the operation support systems.
+		
+		The program will be required to, through the usage of mobile data or wifi networks, download and upload GIS information. It is possible to interlink the program with the Googlemaps.api as it is widely supported by most mobile devices.
+		
+		Further and beyond the GIS interoperability the program will be required to implement a navigations system mapping best routes which might require the program to transform GIS information into data structures upon which shortest-path algorithms and algorithms of that nature can be implemented. It will therefore be required that a suitable high-level programming language be chosen for both ios devices and android devices, as they are the targeted operating systems.
+		
+		For ios devices the options are:
+		\begin{list}{}{}
+			
+			\item ObjectiveC and C
+			\item C++ using the XCode Platform
+			\item OCaml
+		\end{list} 
+	
+		For Android devices the options are:
+			\begin{list}{}{}
+				\item Java
+				\item C and C++ using the Android Native Development Kit (NDK)
+			\end{list}
+	\end{center}
+
+\paragraph{Site Adaptation Requirements}
+\begin{center}
+	This section describes requirements that are specific to data and initialization sequences for this product.
+	
+\end{center}
+
+\paragraph{Product Functions}
+\begin{center}
+	This section provides a summary of the product functions.
+	
+	Provide a traditional navigation system. Which includes the functions of searching locations, saving locations, allowing the user to both use their current location as well as choose to input a location as a starting point. The system will need to be able to show both text and visual directions and include an interface for the visually impaired.
+	
+	Furthermore the product will have the features of a sports fitness app, allowing registered users to compete for "rewards" based on the number of steps one has taken throughout a day, with this route being possibly mapped and recorded.
+	The interface shall include options to allow the user to view points of interest on the map as well as provide additional information about those points of interest.
+\end{center}
+
+\end{document}
