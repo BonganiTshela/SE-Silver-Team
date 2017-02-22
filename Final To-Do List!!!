@@ -4,7 +4,7 @@ Deadline: 23:59 Wednesday, 22 February 2017
 
 Use Case and Use Case Diagrams:
   Login Use Case: Bongani
-  Search for and navigation to location Use Case: Nardus
+  Search for and navigation to location Use Case: Nardus-Done
   Choose route type Use Case: Johan
   View traffic congestion: Johan
   Timetable import Use Case: Henry
@@ -12,10 +12,10 @@ Use Case and Use Case Diagrams:
   An extra use case: Fred
   
   Sequence Diagrams:
-  Basic functionality: Schae
+  Basic functionality: Schae-Done
   Supporting functionality: Merissa
   
-  Traceability Matrix: Merissa
+  Traceability Matrix: Merissa -Done
   
   References: Schae
 
