@@ -1,0 +1,136 @@
+\documentclass[12pt,a4paper]{report}
+\author{Merissa Joubert u15062440}
+\title{Functional Requirements}
+\usepackage[cp1252]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{longtable}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1}
+
+%i can't get the title page to work for some odd reason
+\begin{titlepage} 
+\title{Functional Requirements}
+\author{Merissa Joubert u15062440}
+\date{February 2017}
+\end{titlepage} 
+
+
+
+\begin{document}
+
+
+\pagebreak 
+
+\begin{longtable}{|p{.10\textwidth}| p{.20\textwidth} | p{.60\textwidth} |}
+\hline
+REQID& Section & Requirement Definition \\
+\hline
+1.& Login and Authentication & The system shall provide login facilities that will allow different users to log into different interfaces based on their status. For example students will be able to access the student navigation system while third party members will be able to access the rewards interface for adjustments, settings and push notifications.  \\
+\hline
+1.2& Login and Authentication   & The system will have non-login functionality for guests. \\
+\hline
+2.1& Input & The system shall provide a searching interface that will enable users to search for: venues, events, sporting facilities, historical landmarks, day houses, faculty houses and other points of interest  \\
+\hline
+2.2& Input  & The system shall provide a timetable import function in order to enable students to find their classes on time.  \\
+\hline
+2.3& Input  & The system shall provide users with different route planning options in order to optimize travelling experience. Route options include: fastest route, shortest route, least congested route and scenic route. \\
+\hline
+2.4& Input  & The system shall be able to receive voice commands in order to facilitate users with visual impairments.\\
+\hline
+3.1& Output & The system shall notify users of : upcoming classes, upcoming events\\
+\hline
+3.2& Output &The system shall notify users when they have reached their destination \\
+\hline
+3.3& Output & The system shall provide a navigation interface containing a map of the area surrounding the user and an indication of the user's position on campus\\
+\hline
+3.4& Output & The system shall have an option for verbal output in 2 major languages in order to aid users with visual impairments.\\
+\hline
+3.5& Output & The system shall include a series of vibrations that will enable the user to mute the system and still receive notifications.\\
+\hline
+3.6& Output & The system shall have vibrations that confirm interaction with the screen to aid visually impaired users.\\
+\hline
+3.7& Output & The system shall calculate and display the estimated travel time for the user's current route.\\
+\hline
+3.8& Output & The system shall give the user directions to the requested location both indoors and outdoors.\\
+\hline
+3.9& Output& The system shall provide users with quick predefined routes to the nearest ablution facilities, restaurants and shops.\\
+\hline
+3.10& Output& The system shall allow the user to access heat maps of campus in order to view congestion of the routes they are following.\\
+\hline
+4.1& Network Connection & The system shall use campus wifi access points to triangulate the position of the user and calculate routes.  \\
+\hline
+4.2& Network Connection & The system shall use cellular networks to triangulate the position of the user and calculate routes when the user is in an area with low or no wifi coverage.\\
+\hline
+4.3& Network Connection & The system shall use GPS to find the position of the user accurately and calculate routes precisely.\\
+\hline
+5.1& Data Storage & The system shall store user information in a user profile to enable profiling for push notifications.\\
+\hline
+5.2& Data Storage & The system shall store the steps taken and distance travelled by the user for use in reward systems and activities designed by third party users.\\
+\hline
+5.3& Data Storage & The system shall store a list of recently used routes for ease of access to the user and surveillance purposes.\\
+\hline
+5.4& Data Storage & The system shall cache the main campus map and all locations in order to minimize downloading of data and speed up navigation processes.\\
+\hline
+6.1& Data Analysis & The system will allow administrators to analyse stored data to produce statistical graphs and reports on student movement on campus.\\
+\hline
+6.2& Data Analysis & The system will allow administrators to view the number of students on campus at any point in time as well as the number of students in any class at any given point in time.\\
+\hline
+6.3& Data Analysis & The system will allow administrators to analyse individual user movement sand habits to sort users amongst general stereotypes in order to use push notifications.\\
+\hline
+7.1& Error Handling & The system will include off-line functionality in case of signal loss or disconnection from the network.\\
+\hline
+7.2& Error Handling & The system shall provide route recalculation and correction functionality in case of incorrect navigation.\\
+\hline
+7.3& Error Handling & The system shall allow users to add new personal locations. This is to cater for personal favourite leisure areas as well as any buildings that may be missed by the development team. \\
+\hline
+7.4& Error Handling & The system shall automatically save the state at selected time intervals in case of system failure for whatever reason.\\
+\hline
+7.5& Error Handling & The system shall include saved state recall functionality to enable users to resume their route after a potential system failure.\\
+\hline
+8.1& Disabled Student support & The system shall include a special needs interface for visually impaired users.\\
+\hline
+8.2& Disabled Student support & The system shall include an easy access list of wheelchair friendly access points and routes to aid disabled users.\\
+\hline
+8.3& Disabled Student support & The system shall include adjustable interface settings to enable  the user to change settings based on their disabilities. These settings include : colour adjustments for colour blind users, sound adjustments for deaf users, touch sensitivity adjustments for users with physical disabilities.\\
+\hline
+9.1& Activities & The system shall include background activity modules that can be activated by the user if they wish.\\
+\hline
+9.2& Activities & The system shall include a list of entertainment routes that will allow the user to explore campus and learn about new locations they might not have known about.\\
+\hline
+9.3& Activities & The system shall include a list of exercise routes that the user can use to train on campus. These routes will also be used in an exercise mode that will contain training music and an optional coach to motivate runners.\\
+\hline
+9.4& Activities & The system shall include a diary in the user's profile where they will be able to view the special buildings and landmarks that they have visited.\\
+\hline
+9.5& Activities & The system shall have a group walk functionality that can be used to coordinate  and other group activities.\\ 
+\hline
+9.6& Activities & The system shall have access to a calender and use it to activate special holiday activities designed by the developing team. These include: Easter egg hunt, hidden valentines day cards for couples, Halloween themed ghost hunt and many more at the discretion of the developers.\\
+\hline
+9.7& Activities & The system shall provide users with the option of connecting their profiles to health applications like Shealth in order to improve their life styles.\\
+\hline
+10.1& Reward systems & The system shall use the step counter to notify the user when milestones like 1000 steps have been reached. This functionality can be used to reward users who walk often.\\
+\hline
+10.2& Reward systems & The system shall allow users to set goals based on the distances they walk daily, weekly and monthly. \\
+\hline
+10.3& Reward systems & The system shall keep track of how many classes the user attends and use this number to award the user when they attend classes consistently.\\
+\hline
+10.4& Reward systems& The system  shall keep track of the number of locations visited by the user and reward them when they have reached milestones like 5, 10 and more buildings at the discretion of the developing team.\\
+\hline
+11.1& Help &The system shall provide an instruction page where users will be able to learn how to use the application and find all the functionalities available to them.\\
+\hline
+11.2& Help& The system shall provide hints and tips in pop-ups that the user may activate or de-activate at their own discretion.\\
+\hline
+11.3& Help& The system shall make suggestions about better route options that are in line with set goals or traffic congestion when the user chooses a route.\\
+\hline
+12.1 &Navigation functionality & The system shall provide navigation functionality both indoors and out doors using the various networking capabilities mentioned.\\
+\hline
+12.2&Navigation functionality &The system shall use the user device's location services for accurate location prediction.\\
+\hline
+
+
+\caption{Detailed Functional Requirements} % needs to go inside longtable environment
+\label{tab:NavUP Functional Requirements}
+\end{longtable}
+
+\end{document}
