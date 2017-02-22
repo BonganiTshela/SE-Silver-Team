@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+
+\begin{document}
+
+\title{NavUP - Software Requirements Specification}
+\author{SJ du Plooy (12070794)}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+
+\section{Overall Description}
+
+\section{Specific Requirements}
+
+	\subsection{External Interface Requirements}
+	\subsection{Functional Requirements}
+	\subsection{Performance Requirements}
+	\subsection{Design Constraints}
+	Since the application’s main feature is navigation, it goes without saying that it should be designed and optimized for mobile devices such as smart phones and tablets.  Thus we are limited by the amount of Memory and Processing power we would have at our disposal.  We also need to account for all the different mobile platforms, such as Apple IOS and Android to name a few.  It is possible to develop a hybrid application to accommodate the various platforms, however that could possibly limit the functionality available to us as opposed to developing a native application for all the major platforms.  
+	
+	Furthermore, seeing as how the application could possibly be running for hours in the background, it is imperative that the application not be heavily energy consuming.  This could mean being smart about how we handle the various types of connections the application would need, and how long/often a connection should be established.  
+	
+	There should also be a balance between the number of data processing being handled client and server side.  If only raw data is being fed to the client, it would need to expend more energy processing the data.  On the other hand, if all of the processing is handled server side, it would mean keeping a connection open for longer periods of time, which could result in massive amounts of network traffic, which would in turn only get worse with each new user added to the system.  Furthermore, it is also important to decide what parts of the data would be done client side versus server side.  Essentially you would want most of the heavy lifting be done server side, leaving the more basic work to be done client side, so as to use the memory, processing power, and battery power as efficiently as possible.   
+	
+	
+	\subsection{Software System Attributes}
+	
+		\subsubsection{Reliability}
+		The application will have to be accurate within the average person’s viewing distance, in other words, the user should be guided to within viewing distance of the desired destination.  Furthermore, the application’s resources, such as maps, location triangulation, etc., will have to be as updated as possible within reason, so as to ensure the user not be misled to an old or even non-existing venue.  
+		
+		One of the application’s desired functionality is to be able to indicate to the user the shortest/fastest path from their current location to their intended destination.  A possible method the application could utilize would be through crowd sourcing, in that other users’ general location be used to generate heat-maps to indicate congestion on a possible route.  Furthermore, the application could also be informed by the system of any possible construction taking place on a given route, which could also cause obstructions, adding to possible congestion levels, and would rather be avoided if at all possible.  
+		
+		\subsubsection{Availability}
+		The application will rely heavily on an active connection to either a Wi-Fi connection for indoor navigation, or a GPS connection and/or Cellular connection for outdoors.  This will however not always be the case, therefore the application would have to make provisions in the event there are no connections available, or the signal is being blocked for whatever reason.  This could possibly be done by caching a reasonable amount of the map and current location, then when the signal drops, make use of the user’s steps to estimate distance traveled and where the user could possibly be at a given point in time.  Then when connection is re-established, the application could compensate for the margin of error, and correct itself accordingly.  
+		
+		\subsubsection{Security}
+		Seeing as how the application deals mainly with location tracking and intended destinations, the information could be considered as sensitive data, which means infringement on this information without the user’s knowledge can be considered a serious offence on the user’s privacy rights, and therefore punishable by law.  Thus it is crucial that every possible step be taken to ensure the privacy of the users be maintained, and that if any information were to be compromised, it not be easily possible to single out and identify a given user.  
+		
+		\subsubsection{Maintainability}
+		The application would get most of its information from a centralized System, be it heat maps, congestion statistics, latest map data, and even the status of current and newly added Wi-Fi hotspots.  Therefore the Centralized System would have to be constantly fed new information whenever it arises, with occasional updates to the application itself, mainly in the form of bug fixes and new or improved features to the application’s functionality.  
+		
+		Seeing as how the application would be used in a fairly isolated and single location, one Server to host the Centralized System should be sufficient, including a backup server or two, seeing as how it will be primarily used on a single network infrastructure.  
+		
+		\subsubsection{Portability}
+		For it to work effectively, the application will depend heavily on a stable and reliable network backbone, so as long as such a network is present, the System should work anywhere with the right information at its disposal.  The system will not be limited to the University main campus, and should be able to work in any location, so long as it has access to all of the relevant data it needs to perform its purpose.  
+		
+			
+
+\end{document}
