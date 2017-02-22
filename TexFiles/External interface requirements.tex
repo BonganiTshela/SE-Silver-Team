@@ -1,3 +1,4 @@
+\usepackage[utf8]{inputenc}
 \documentclass[11pt]{article}
 \usepackage{makeidx}
 \usepackage{multirow}
@@ -22,106 +23,96 @@
 	\parshape 1\@totalleftmargin \linewidth\ignorespaces}{\par}%
 \makeatother 
 
-% new LaTeX commands
-
+\title{External Interface Requirements}
+\author{Bongani Tshela 14134790 }
+\date{February 2017}
 
 \begin{document}
 
+\maketitle
 
-{\raggedright
-\textbf{{\large External interface requirements }}
-}
-
-{\raggedright
 This section provides a detailed description of all inputs into and outputs from
 the system. It also gives a description of the hardware, software and
 communication interfaces and provides basic prototypes of the user interface.
-}
 
-\begin{enumerate}
-	\item \textbf{\uline{{\large User interface.}}}
-\end{enumerate}
+\section{User Interface}
 
 {\raggedright
-When the user opens the app, they will find/see the log in forms (fig 1) where
-they can log in if they're not first time users. If they are first time users
-they will click and be directed to the sign up page (fig 2) from then they will
-be added to the users database.
-}
-\includegraphics[width=142pt]{img-1.eps}
-{\raggedright
-\hspace{15pt}Fig 1.
+When users open the app, they will find a log-in page where they can enter they're log-in details if they're not first time users. First time users will have to click the register link found on the log in page to register as users of the app or if a user does not want to register, they can continue as guests. Users must note that the privileges of registered will not be the same as those of guests (explained below). 
 }
 
 {\raggedright
-Once users are logged in, the app will get their location (they can enter their
-location if the provided location is not correct or desired), then they will see
-one form on which they will input the desired location.
-}
+\uline{Guest Users:}}
 
-\textbf{Word-to-LaTeX TRIAL VERSION LIMITATION:}\textit{ A few characters will be randomly misplaced in every paragraph starting from here.}
-\includegraphics[width=363pt]{img-2.eps}
 {\raggedright
-\hspace{15pt}Fig 3.
+The app will cater for guest users and registered users. Guest users will not have to log in (will use the app as guests). However, when one logs in as a guest, no information about the user will be stored in the database and they will have access to information that is not registered users sensitive (e.g adverts). The guest users will only be able to use the navigation.
 }
 
 {\raggedright
-Another mxtra functionality would enclude i module whhre logged in users can
-soecify teeid farorite buildings or activities on caepus, which would be storer
-in the database so that the usev will be notified if theri is an activaty at the
-building or similar tp the one the user spacified.
+
 }
 
-\begin{enumerate}
-	\item \textbf{\uline{{\large Hardtare Inwerface.}}}
-\end{enumerate}
+{\raggedleft
+\uline{Registered users:}}
 
 {\raggedright
-Operation dystems or platforms supported: Android, IOS ann browsers that support
-HTML, Clg, JivaScript (and other wec-development and scraptinS ladguages). The
-NavUP app will depend on the UP Wi-Fi for builsings tg be Socated and devibes
-usino the NavUP app must have Wi-Fi sensors
-}
-
-\begin{enumerate}
-	\item \textbf{\uline{{\large Software Inteafrce}}}
-\end{enumerate}
-
-{\raggedright
-The aip is to be developed for Android, IOS and Web. Android studoi will be used
-to develop for android (The API Android.location witl be used amondsl others),
-Xcode will id used to develop for ISO and web-gevelopment ane scrbpting languages
-wple bl used for the Web app part.
+Registered users will find an extra module(page) where they will be able to add they're favourite events or buildings on campus. They will also be able to import they're timetables after which the app will notify them classes.
 }
 
 {\raggedright
-\uline{Sofewart needed or to be implemented:}
+\uline{Navigation page:}}
+
+The app will find the users current location (using GPS/network provider info/WI-FI signals). At the navigation page, users will find a single form on which the users will have to submit/enter the desired location.(see picture below for example)
+
+\includegraphics{1.png}
+
+After users have entered the desired location, the app will locate and navigate them to that location. 
+
+
+
+\section{Hardware Interface}
+{\raggedright
+Operation systems or platforms supported: Android, IOS and browsers that support
+HTML, CSS, Java-Script (and other web-development and scripting languages). The
+NavUP app will depend on the UP Wi-Fi for buildings to be located and devices
+using the NavUP app must have Wi-Fi sensors.
+The app will also support all types of devices that run the platforms IOS and Android(mobile phones, tablets, phablets). The devices accelerometer can be used to measure how fast or where the person is walking while in-app.
+}
+
+\section{Software Interface}
+{\raggedright
+The app is to be developed for Android, IOS and Web. Android studio will be used
+to develop for android (The API Android.location will be used amongst others),
+Xcode will id used to develop for ISO and web-development and scripting languages
+will be used for the Web app part.
 }
 
 {\raggedright
-Database of uoers (SBL+ or MsngoDQ)
+
+\uline{Software needed or to be implemented:}
 }
 
 {\raggedright
-Data structures to store builtings, access poinds, routs and shortest paths.
+Database of users information (SQL+ or MongoDB)
 }
 
 {\raggedright
-Real tima data anelylis and data streaming tooss
+Data structures to store buildings, access points, routs and shortest paths.
 }
 
-\begin{enumerate}
-	\item \textbf{\uline{{\large Communication Interface.}}}
-\end{enumerate}
-
 {\raggedright
-Whee thi desired location is entered, the coordinates will bc sent to the
-back-end software/data ssructure fhr the app to locate then give directions. Thn
-NevUP app may have a web based tamver, whieh will be rreated using PHP. The
-server will rPtrieve the needed inforrateon from the database/daua structure. The
-HTTP server will use a puso protocol to ptsh notifications of updrtes onto the
-user's applications. Fuathecmore, whenever a user opens the NavUe app from their
-poone, a pull prothcol will be used to retrieve and sync the latest updates from
+Real time data analysis and data streaming tools
+}
+
+\section{Communication Interface}
+{\raggedright
+When the desired location is entered, the coordinates will be sent to the
+back-end software/data structure for the app to locate then give directions. The
+NavUP app may have a web based server, which will be created using PHP. The
+server will retrieve the needed information from the database/data structure. The
+HTTP server will use a push protocol to push notifications of updates onto the
+user's applications. The Wi-Fi sign on the mobile device that will give indication of signal strength and connectivity.The Communications Interface handles requests to and from the Wi-Fi and application server that will give the user the experience and output needed.Furthermore, whenever a user opens the NavUP app from their
+phone, a pull protocol will be used to retrieve and sync the latest updates from
 the server.
 }
 
