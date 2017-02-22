@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{SRS - Log in/out pages}
+\author{ Bongani Tshela }
+\date{February 2017}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+
+\begin{document}
+
+\maketitle
+
+\begin{table}[]
+\centering
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+Use Case         & Log in/out                                                                                                                                                                                                                                                                                                                                                                  \\ \hline
+Description      & \begin{tabular}[c]{@{}l@{}}This describes how the users log in and out of the system/app.
+                        \end{tabular}                                                                                                                                                                                                                                    \\ \hline
+Precondition     & \begin{tabular}[c]{@{}l@{}}The user opens the application log in box .\end{tabular}                                                                                                                                                                                                                                                              \\ \hline
+Trigger       & \begin{tabular}[c]{@{}l@{}}The user enters their id number and password.\end{tabular}                                                                                                                                                                                                                                                     \\ \hline
+Cases            & \begin{tabular}[c]{@{}l@{}}1. The user enters their login id and password \\
+A. If the login and password is valid, the user will be passed to other parts of the app. \\
+i. The security is verified. \\
+ii. The menu is loaded. \\
+B. If the login or password is not valid, an error message is displayed. \\
+i. The user clicks an ok button. \\
+ii. The user is returned to login screen. \\ \\
+2. The user clicks the logout button \\
+i. The session is terminated and the app is closed. \\
+ii. The window is closed. \end{tabular} \\ \hline
+
+
+\end{tabular}
+\end{table}
+
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=1]{Screenshot (13).png}
+\caption{Use case Diagram}
+\label{UML diagram}
+\end{figure}
+
+
+\end{document}
