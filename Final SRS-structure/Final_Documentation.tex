@@ -217,6 +217,46 @@ Furthermore the product will have the features of a sports fitness app, allowing
 
 The interface shall include options to allow the user to view points of interest on the map as well as provide additional information about those points of interest.
 
+\subsection{User Characteristics}
+The following is a description of the characters we assume the user possesses/should
+possess in order to fully utilize the product
+This product is intended for a user who is currently studying at/visiting/working
+at the University of Pretoria. The user is expected to have a basic understand-
+ing of navigational systems in order to use the base functionality of the program
+such as mapping the route from one place to another. For the other functionali-
+ties such as the step counter/fitness section, the user would require a familiarity
+with such systems. Do to the nature of the product the user need not have a
+specifc educational level just a basic affinity towards maps technology.
+
+\subsection{Constraints}
+The following is a description of the restrictions upon the solution space.
+The solution space is restricted by device (hardware and software) in the
+sense that only devices with location services as well as the intended ios/android
+operating systems will have access to the product. Due to the difference in op-
+erating systems the programmer has the option of either implementing separate
+systems which work in the same way in two different languages or using a com-
+mon language such as Objective C/c++/C in order to write one system that
+works on both kinds of devices. The latter has the draw back of not being
+able to fully utilize each OS's intricate prowess and creating extra work for the
+programmer to develop a more modular software. The programmer is also limited by the mobile data/wifi data consumption limit that one should place on the product. With the intended target market in mind, as far as possible, the product should be developed such that it can run in the background without
+being resource expensive. Further than the mobile data/wifi data resource the programmer has to consider the computational expense as well as the memory expense.
+
+\subsection{Assumptions and Dependencies}
+\begin{list}{Assumption:}{}
+	\item The user possesses a smart phone.
+	\item The user has a desire to navigate through campus faster.
+	\item The user has a desire to participate in the fitness aspect of the
+app.
+\end{list}
+
+\begin{list}{Dependency:}{}
+	\item A map/blueprint of the internals of the buildings as well as a
+map of the University of Pretoria.
+	\item Access to the University of Pretoria Wifi network so as to create
+heat maps of devices currently linked so as to show foot traffic.
+	\item Access to a hosting service on which the product can host the
+database and other user information.
+\end{list}
 
 %///////////////////////////////////////bongani
 
@@ -1222,7 +1262,7 @@ Choose Route Type Use Case Diagram
 
 	\subsection{Home Page}
 
-	\includegraphics[width=\linewidth]{Homepage.jpg}
+	\includegraphics[width=\linewidth]{Home page.jpg}
 
 	
 
